@@ -1,9 +1,10 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
-  min-height: 10vh;
+  min-height: 6vh;
   background-color: var(--color-header-footer);
 }
 
@@ -55,16 +56,16 @@
 
 .hamburger {
   border: 0;
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   padding: 0.5rem;
   border-radius: 50%;
   background-color: var(--secondary);
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: fixed;
-  top: 30px;
-  right: 10px;
+  top: 3%;
+  right: 1%;
   transform: translateY(-50%);
   display: block;
   z-index: 1;
@@ -77,7 +78,7 @@
 @media screen and (min-width: 992px) {
   .header {
     justify-content: space-around;
-    min-height: 5vh;
+    /* min-height: 5vh; */
   }
 
   .hamburger {
@@ -100,7 +101,7 @@
 
 @media screen and (min-width: 1200px) {
   .header {
-    min-height: 5vh;
+    /* min-height: 5vh; */
   }
 
   .hamburger {
