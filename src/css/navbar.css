@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  min-width: 100%;
   min-height: 6vh;
   background-color: var(--color-header-footer);
 }
@@ -11,11 +11,6 @@
 .logo-div {
   display: flex;
   align-items: center;
-}
-
-.logo-img {
-  width: 25px;
-  height: 25px;
 }
 
 .logo-header {
@@ -75,10 +70,19 @@
   background-color: var(--primary);
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    min-height: 8vh;
+  }
+
+  .hamburger {
+    top: 4%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .header {
     justify-content: space-around;
-    /* min-height: 5vh; */
   }
 
   .hamburger {
@@ -100,10 +104,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .header {
-    /* min-height: 5vh; */
-  }
-
   .hamburger {
     display: none;
   }

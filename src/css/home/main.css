@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
+  /* min-width: 60%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,10 +13,7 @@
 
 .main-text-div {
   color: var(--primary);
-  display: block;
-  margin: 0 auto;
   text-align: center;
-  width: 85%;
   color: var(--color-header-footer);
 }
 
