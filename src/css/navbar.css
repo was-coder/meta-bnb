@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   min-height: 10vh;
@@ -38,17 +38,18 @@
 }
 
 .wallet-div {
-  margin-top: 12px;
-  margin-right: 170px;
+  margin-top: 17px;
+  margin-right: 60px;
 }
 
 .btn {
-  padding: 10px 15px;
+  padding: 7px 10px;
   border: 1px solid var(--secondary);
   background-color: var(--secondary);
   border-radius: 10px;
   color: var(--color-header-footer);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .hamburger {
@@ -72,14 +73,9 @@
   background-color: var(--primary);
 }
 
-@media screen and (min-width: 768px) {
-  .wallet-div {
-    margin-right: 300px;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .header {
+    justify-content: space-around;
     min-height: 5vh;
   }
 
@@ -94,6 +90,10 @@
   .wallet-div {
     margin-top: 5px;
     margin-right: 0;
+  }
+
+  .btn {
+    padding: 10px 15px;
   }
 }
 
