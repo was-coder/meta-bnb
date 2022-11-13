@@ -38,7 +38,8 @@
 }
 
 .wallet-div {
-  margin-top: 17px;
+  display: flex;
+  align-items: center;
   margin-right: 60px;
 }
 
