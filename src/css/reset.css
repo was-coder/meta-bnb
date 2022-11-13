@@ -1,0 +1,27 @@
+:root {
+  --primary: #434343;
+  --secondary: #a02279;
+  --background-footer: #1d1d1e;
+  --color-logo-footer: #f7f7f7;
+  --color-header-footer: #ffffff;
+  --color-text-footer: #f1f3f9;
+  --modal-color: #333333;
+  --modal-logo: #000000;
+  --search: #b8b8b8;
+  --search-input: #a3a3a3;
+}
+
+/* STANDARD STYLING */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Rose", cursive;
+  font-size: 16px;
+}
