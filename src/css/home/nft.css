@@ -3,7 +3,7 @@
 }
 
 .nft-div {
-  min-height: 130vh;
+  min-height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -34,7 +34,7 @@
 @media screen and (min-width: 768px) {
   .nft-div {
     width: 70%;
-    min-height: 170vh;
+    min-height: 150vh;
   }
 }
 
