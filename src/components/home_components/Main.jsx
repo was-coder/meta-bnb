@@ -26,34 +26,7 @@ function Main() {
           </div>
 
           <div className="main-images">
-            <div className="first-main-images">
-              <img
-                src="/assets/home1.png"
-                alt="home1"
-                className="main-img"
-                id="home1"
-              />
-              <img
-                src="/assets/home2.png"
-                alt="home2"
-                className="main-img"
-                id="home2"
-              />
-            </div>
-            <div className="second-main-images">
-              <img
-                src="/assets/home3.png"
-                alt="home3"
-                className="main-img"
-                id="home3"
-              />
-              <img
-                src="/assets/home4.jpg"
-                alt="home4"
-                className="main-img"
-                id="home4"
-              />
-            </div>
+            <img src="/assets/home-logo.png" alt="home logo" className="logo" />
           </div>
         </div>
 

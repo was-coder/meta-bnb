@@ -16,22 +16,9 @@ function Nft() {
           </div>
           <div className="nft-image-div">
             <img
-              src="/assets/nft1.png"
-              alt="nft1"
-              className="nft-img"
-              id="nft1"
-            />
-            <img
-              src="/assets/nft2.png"
-              alt="nft2"
-              className="nft-img"
-              id="nft2"
-            />
-            <img
-              src="/assets/nft3.png"
-              alt="nft3"
-              className="nft-img"
-              id="nft3"
+              src="/assets/nft-logo.png"
+              alt="nft logo"
+              className="logo nft-logo"
             />
           </div>
         </div>

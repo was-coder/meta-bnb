@@ -1,23 +1,20 @@
 .main-top-div {
-  background-image: linear-gradient(rgba(5, 6, 5, 0.7), #000),
-    url(/public/assets/home2.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 90vh;
+  width: 90%;
+  margin: 0 auto;
+  min-height: 150vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .main-text-div {
   color: var(--primary);
   text-align: center;
-  color: var(--color-header-footer);
 }
 
 .main-text-header {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .main-text-header span {
@@ -57,25 +54,6 @@
   font-size: 16px;
 }
 
-.main-images {
-  display: none;
-}
-
-.main-images div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.first-main-images {
-  margin-top: 70px;
-}
-
-.main-img {
-  width: 200px;
-  height: 150px;
-}
-
 .main-bottom-div {
   display: flex;
   justify-content: space-between;
@@ -105,11 +83,11 @@
 
 @media screen and (min-width: 768px) {
   .main-text-div {
-    width: 70%;
+    width: 80%;
   }
 
   .main-text-header {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .main-text-p {
@@ -119,18 +97,21 @@
   .form-input {
     width: 50%;
   }
+
+  .main-bottom-div {
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .main-top-div {
-    background: none;
-    width: 90%;
-    margin: 0 auto;
+    min-height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .main-text-div {
     text-align: start;
-    color: var(--primary);
   }
 
   .main-text-header {
@@ -139,8 +120,7 @@
   }
 
   .main-text-p {
-    width: 95%;
-    font-size: 20px;
+    width: 80%;
   }
 
   .main-form {
@@ -152,22 +132,9 @@
     padding: 15px;
   }
 
-  .main-images {
-    display: flex;
-    gap: 5px;
-  }
-
-  .main-bottom-div {
-    justify-content: space-around;
-  }
-
   .bottom-h3 {
     padding-left: 10px;
     font-size: 20px;
-  }
-
-  .mb-h3 {
-    padding-left: 0;
   }
 }
 
@@ -181,15 +148,6 @@
   }
 
   .main-text-p {
-    width: 85%;
     font-size: 24px;
-  }
-
-  .bottom-h3 {
-    padding-left: 10px;
-  }
-
-  .mb-h3 {
-    padding-left: 0;
   }
 }
