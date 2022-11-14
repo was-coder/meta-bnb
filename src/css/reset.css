@@ -27,8 +27,8 @@ body {
 }
 
 .main-text-div,
-.home-places {
-  display: block;
+.home-places,
+.nft-div {
   width: 85%;
   margin: 0 auto;
 }
@@ -36,4 +36,10 @@ body {
 .logo-img {
   width: 25px;
   height: 25px;
+}
+
+li {
+  list-style: none;
+  padding: 5px 0;
+  font-size: 14px;
 }

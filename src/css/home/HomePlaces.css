@@ -1,5 +1,9 @@
-.home-places-h1 {
+.home-places {
   padding: 50px 0;
+}
+
+.home-places-h1 {
+  padding-bottom: 35px;
   font-size: 28px;
   text-align: center;
 }
@@ -18,6 +22,7 @@
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
+  gap: 10px;
   max-width: 100%;
 }
 
@@ -48,6 +53,11 @@
 
 .inner-flex-div p {
   font-size: 12px;
+}
+
+.star-div {
+  display: flex;
+  gap: 7px;
 }
 
 @media screen and (min-width: 768px) {
