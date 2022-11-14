@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-div">
           <div className="footer-flex1">
             <div className="footer-flex1-one">
-              <img src="/assets/footer.png" alt="house" />
+              <img src="/assets/footer.png" alt="house" className="house" />
               <h1>Metabnb</h1>
             </div>
             <div className="footer-flex1-two">
