@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const links = [
@@ -25,10 +25,17 @@ const links = [
 ];
 
 function Navbar() {
+  const [navExpanded, setNavExpanded] = useState(false);
+
   return (
     <>
       <nav className="header">
-        <button className="hamburger">
+        <button
+          className="hamburger"
+          onClick={() => {
+            setNavExpanded(!navExpanded);
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -53,7 +60,7 @@ function Navbar() {
         </div>
 
         <div className="link-div">
-          <ul className="link-ul">
+          <ul className={navExpanded ? "link-ul expanded" : "link-ul"}>
             {links.map((links) => (
               <li className="link-li">
                 <NavLink className="link" key={links.id} to={links.to}>
