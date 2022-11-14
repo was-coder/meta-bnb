@@ -6,12 +6,12 @@ function Navigation() {
       <section className="Navigation">
         <div className="navigation-div">
           <div className="navigation-text">
-            <p>Restaurant</p>
+            <p>Resturant</p>
             <p>Cottage</p>
             <p>Castle</p>
-            <p>Fantastic city</p>
+            <p>Fantast city</p>
             <p>Beach</p>
-            <p>cabins</p>
+            <p>Carbins</p>
             <p>Off-grid</p>
             <p>Farm</p>
           </div>

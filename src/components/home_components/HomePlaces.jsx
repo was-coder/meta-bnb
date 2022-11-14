@@ -1,5 +1,5 @@
 import React from "react";
-import places from "../Data";
+import homePlaces from "../Data";
 import { stars } from "../Data";
 
 function HomePlaces() {
@@ -7,7 +7,7 @@ function HomePlaces() {
     <section className="home-places">
       <h1 className="home-places-h1">Inspiration for your next adventure</h1>
       <div className="grid-main-div">
-        {places.map((place) => (
+        {homePlaces.map((place) => (
           <div className="flex-main-div" key={place.id}>
             <img src={place.img1} alt="place1" className="home-place-img" />
             <div className="flex-div">

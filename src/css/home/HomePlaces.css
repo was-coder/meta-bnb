@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .flex-div {
@@ -32,8 +32,8 @@
 }
 
 .home-place-img {
-  width: 250px;
-  height: 200px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .inner-flex-div {
@@ -77,10 +77,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .home-places {
-    min-width: 95%;
-  }
-
   .home-places-h1 {
     font-size: 48px;
   }
