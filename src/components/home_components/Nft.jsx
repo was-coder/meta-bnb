@@ -3,7 +3,7 @@ import React from "react";
 function Nft() {
   return (
     <>
-      <section className="nft">
+      <section className="nft" id="nft">
         <div className="nft-div">
           <div className="nft-text-div">
             <h1>Metabnb NFTs</h1>

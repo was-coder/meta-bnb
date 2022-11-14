@@ -8,9 +8,9 @@ const links = [
     to: "/",
   },
   {
-    id: "place",
+    id: "places",
     content: "Place to stay",
-    to: "/",
+    to: "/places",
   },
   {
     id: "nft",
