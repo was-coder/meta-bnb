@@ -205,4 +205,27 @@ export const stars = [
   "/assets/star.png",
 ];
 
+export const links = [
+  {
+    id: "home",
+    content: "Home",
+    to: "/",
+  },
+  {
+    id: "places",
+    content: "Place to stay",
+    to: "/places",
+  },
+  {
+    id: "nft",
+    content: "NFTs",
+    to: "/",
+  },
+  {
+    id: "community",
+    content: "Community",
+    to: "/",
+  },
+];
+
 export default homePlaces;

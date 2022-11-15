@@ -1,31 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-
-const links = [
-  {
-    id: "home",
-    content: "Home",
-    to: "/",
-  },
-  {
-    id: "places",
-    content: "Place to stay",
-    to: "/places",
-  },
-  {
-    id: "nft",
-    content: "NFTs",
-    to: "/",
-  },
-  {
-    id: "community",
-    content: "Community",
-    to: "/",
-  },
-];
+import { links } from "./Data";
 
 function Navbar() {
   const [navExpanded, setNavExpanded] = useState(false);
+
+  const [popup, setPopup] = useState(false);
 
   return (
     <>
@@ -77,20 +57,52 @@ function Navbar() {
         </div>
 
         <div className="wallet-div">
-          <button className="btn" id="wallet-btn">
+          <button
+            className="btn"
+            id="wallet-btn"
+            onClick={() => {
+              setPopup(!popup);
+            }}
+          >
             Connect Wallet
           </button>
         </div>
       </nav>
 
-      <div className="modal-popup">
+      <div className={popup ? "modal-popup expanded" : "modal-popup"}>
         <div className="modal-popup1">
           <div>
             <h2>Connect Wallet</h2>
-            <img src="/assets/x.png" alt="close button" />
+            <img
+              src="/assets/x.png"
+              alt="close button"
+              id="close-btn"
+              onClick={() => {
+                setPopup(!popup);
+              }}
+            />
+          </div>
+          <hr />
+        </div>
+        <div className="modal-popup2">
+          <p>Choose your preferred wallet:</p>
+          <div>
+            <img
+              src="/assets/modal1.png"
+              alt="Modal one"
+              className="modal-img"
+            />
+            <img src="/assets/arrow.png" alt="Arrow" className="arrow" />
+          </div>
+          <div>
+            <img
+              src="/assets/modal2.png"
+              alt="Modal two"
+              className="modal-img"
+            />
+            <img src="/assets/arrow.png" alt="Arrow" className="arrow" />
           </div>
         </div>
-        <div className="modal-popup2"></div>
       </div>
     </>
   );
