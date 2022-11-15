@@ -5,7 +5,7 @@
   min-width: 100%;
   min-height: 6vh;
   background-color: var(--color-header-footer);
-  z-index: 5;
+  z-index: 1;
 }
 
 .logo-div {
@@ -88,14 +88,16 @@
 .modal-popup {
   display: none;
   position: fixed;
-  top: 35%;
-  left: 20%;
+  top: 30%;
+  left: 15%;
   width: 70%;
   flex-direction: column;
   background-color: var(--color-header-footer);
   border-radius: 10px;
   color: var(--modal-color);
-  z-index: 10;
+  z-index: 3;
+  box-shadow: 10px 5px 30px #000;
+  transition: all 0.5s ease-in-out;
 }
 
 .modal-popup1 {
@@ -156,6 +158,11 @@ hr {
   .hamburger {
     top: 4%;
   }
+
+  .modal-popup {
+    width: 50%;
+    left: 25%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -184,10 +191,21 @@ hr {
 
   .wallet-div {
     margin-top: 5px;
+    z-index: 2;
     margin-right: 0;
   }
 
   .btn {
     padding: 10px 15px;
+  }
+
+  .modal-popup {
+    width: 40%;
+    left: 30%;
+  }
+
+  .modal-img {
+    width: 150px;
+    height: 40px;
   }
 }
