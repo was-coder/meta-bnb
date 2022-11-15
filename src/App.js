@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import GetRoute from "./route/GetRoute";
 import Footer from "./components/Footer";
 
 function App() {
+  const [popup, setPopup] = useState(false);
+
   return (
     <>
-      <Navbar />
-      <GetRoute />
-      <Footer />
+      <div
+        onClick={() => {
+          setPopup(!popup);
+        }}
+        className={popup ? "container expanded" : "container"}
+      >
+        <Navbar />
+        <GetRoute />
+        <Footer />
+      </div>
     </>
   );
 }

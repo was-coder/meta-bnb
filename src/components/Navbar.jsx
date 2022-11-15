@@ -9,6 +9,43 @@ function Navbar() {
 
   return (
     <>
+      <div className="main-popup">
+        <div className={popup ? "modal-popup expanded" : "modal-popup"}>
+          <div className="modal-popup1">
+            <div>
+              <h2>Connect Wallet</h2>
+              <img
+                src="/assets/x.png"
+                alt="close button"
+                id="close-btn"
+                onClick={() => {
+                  setPopup(!popup);
+                }}
+              />
+            </div>
+            <hr />
+          </div>
+          <div className="modal-popup2">
+            <p>Choose your preferred wallet:</p>
+            <div>
+              <img
+                src="/assets/modal1.png"
+                alt="Modal one"
+                className="modal-img"
+              />
+              <img src="/assets/arrow.png" alt="Arrow" className="arrow" />
+            </div>
+            <div>
+              <img
+                src="/assets/modal2.png"
+                alt="Modal two"
+                className="modal-img"
+              />
+              <img src="/assets/arrow.png" alt="Arrow" className="arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
       <nav className="header">
         <button
           className="hamburger"
@@ -68,42 +105,6 @@ function Navbar() {
           </button>
         </div>
       </nav>
-
-      <div className={popup ? "modal-popup expanded" : "modal-popup"}>
-        <div className="modal-popup1">
-          <div>
-            <h2>Connect Wallet</h2>
-            <img
-              src="/assets/x.png"
-              alt="close button"
-              id="close-btn"
-              onClick={() => {
-                setPopup(!popup);
-              }}
-            />
-          </div>
-          <hr />
-        </div>
-        <div className="modal-popup2">
-          <p>Choose your preferred wallet:</p>
-          <div>
-            <img
-              src="/assets/modal1.png"
-              alt="Modal one"
-              className="modal-img"
-            />
-            <img src="/assets/arrow.png" alt="Arrow" className="arrow" />
-          </div>
-          <div>
-            <img
-              src="/assets/modal2.png"
-              alt="Modal two"
-              className="modal-img"
-            />
-            <img src="/assets/arrow.png" alt="Arrow" className="arrow" />
-          </div>
-        </div>
-      </div>
     </>
   );
 }

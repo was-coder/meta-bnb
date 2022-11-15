@@ -31,11 +31,6 @@
   background-color: var(--secondary);
 }
 
-.link-ul.expanded,
-.modal-popup.expanded {
-  display: flex;
-}
-
 .link-li {
   list-style-type: none;
   padding: 10px 20px;
@@ -98,6 +93,7 @@
   z-index: 3;
   box-shadow: 10px 5px 30px #000;
   transition: all 0.5s ease-in-out;
+  animation: pop-swirl 1s ease forwards;
 }
 
 .modal-popup1 {
@@ -148,6 +144,31 @@ hr {
 .modal-popup1 > div {
   display: flex;
   justify-content: space-between;
+}
+
+@keyframes pop-swirl {
+  0% {
+    transform: scale(0) rotate(360deg);
+  }
+  60% {
+    transform: scale(0.8) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.container.expanded {
+  opacity: 0.8;
+}
+
+.container {
+  opacity: 1;
+}
+
+.link-ul.expanded,
+.modal-popup.expanded {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {

@@ -205,6 +205,8 @@ export const stars = [
   "/assets/star.png",
 ];
 
+// Links
+
 export const links = [
   {
     id: "home",
