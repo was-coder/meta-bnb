@@ -62,7 +62,12 @@ function Navbar() {
         <div className="link-div">
           <ul className={navExpanded ? "link-ul expanded" : "link-ul"}>
             {links.map((links) => (
-              <li className="link-li">
+              <li
+                onClick={() => {
+                  setNavExpanded(!navExpanded);
+                }}
+                className="link-li"
+              >
                 <NavLink className="link" key={links.id} to={links.to}>
                   {links.content}
                 </NavLink>
@@ -77,6 +82,16 @@ function Navbar() {
           </button>
         </div>
       </nav>
+
+      <div className="modal-popup">
+        <div className="modal-popup1">
+          <div>
+            <h2>Connect Wallet</h2>
+            <img src="/assets/x.png" alt="close button" />
+          </div>
+        </div>
+        <div className="modal-popup2"></div>
+      </div>
     </>
   );
 }

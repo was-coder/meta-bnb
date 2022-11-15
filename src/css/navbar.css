@@ -35,10 +35,18 @@
   display: flex;
 }
 
+/* .link-expanded{
+    display: none;
+  } */
+
 .link-li {
   list-style-type: none;
   padding: 10px 20px;
 }
+
+/* .link-li.not-expanded {
+  display: none;
+} */
 
 .link {
   color: var(--color-header-footer);
